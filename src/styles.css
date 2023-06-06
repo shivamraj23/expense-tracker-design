@@ -1,0 +1,131 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+body {
+    background-color: #212529;
+}
+.balance-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+
+.balance {
+    background-color: #343a40;
+    width: 20vw;
+    border-radius: 2vh;
+    color: #ade8f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+.money-in {
+    color: #94d2bd;
+}
+.money-out {
+    color: #f28482;
+}
+
+.transaction-container {
+    background-color: #dde7c7;
+    width: 60vw;
+    margin: 2vw;
+    height: 80vh;
+    padding: 2vh 0vh;
+    border-radius: 2vh;
+}
+.transactions {
+    background-color: #fefee3;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vh;
+}
+.single-transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vh;
+}
+
+.middlerow {
+    display: flex;
+}
+
+.new-transaction-container {
+    background-color: #fcefb4;
+    width: 30vw;
+    margin: 2vw;
+    height: 60vh;
+    padding: 2vh 0vh;
+    border-radius: 2vh;
+}
+
+.inputbox {
+    width: 80%;
+    height: 10vh;
+    margin: 3vh 0;
+    font-size: 20px;
+    padding-left: 2vh;
+    border-radius: 2vh;
+    border: none;
+    background-color: #fdf8e1;
+}
+.submitbtn {
+    display: block;
+    width: 10vw;
+    height: 10vh;
+    font-size: 20px;
+    position: absolute;
+    right: 6vw;
+    bottom: 10vh;
+    background-color: #fae588;
+    border-radius: 2vh;
+    border: none;
+}
+
+@media only screen and (max-width: 360px) {
+    .body {
+        padding: 1vh;
+    }
+    .balance-container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin: 10vw 1vw;
+        border-radius: 2vh;
+    }
+    .balance {
+        width: 70vw;
+        height: 10vh;
+        margin: 3vw 1vw;
+        font-size: 12px;
+        align-items: center;
+    }
+    .middlerow {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin: 1vw;
+    }
+    .transaction-container {
+        width: 86vw;
+        display: flex;
+        flex-direction: column;
+        margin: 10vw 1vw;
+        padding: 0 2vw;
+    }
+    .submitbtn {
+        position: relative;
+        width: 25vw;
+        height: 8vh;
+        left: 60vw;
+        top: 12vw;
+    }
+    .new-transaction-container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin: 10vw 1vw;
+    }
+}
